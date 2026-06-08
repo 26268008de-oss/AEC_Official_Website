@@ -1,13 +1,9 @@
 "use strict";
-// ==========================================
-// 1. URLの設定（必ずファイルの一番上に書くぜ！）
-// ==========================================
+
 const BASE_URL = "http://127.0.0.1:8000";
 const INTRO_URL = `${BASE_URL}/about`;
 const SCHEDULE_URL = `${BASE_URL}/schedule`;
-// ==========================================
-// 3. 機能①：サークル紹介文を取ってくる関数
-// ==========================================
+
 async function fetchClubInfo() {
     try {
         const response = await fetch(INTRO_URL);
@@ -24,9 +20,7 @@ async function fetchClubInfo() {
         console.error("紹介文の取得に失敗：", error);
     }
 }
-// ==========================================
-// 4. 機能②：スケジュールを取ってくる関数
-// ==========================================
+
 async function fetchSchedule() {
     try {
         const response = await fetch(SCHEDULE_URL);
@@ -54,8 +48,6 @@ async function fetchSchedule() {
         console.error("スケジュールの取得に失敗：", error);
     }
 }
-// ==========================================
-// 5. 実行命令（最後にまとめてお使いに出すぜ！）
-// ==========================================
+
 fetchClubInfo();
 fetchSchedule();
