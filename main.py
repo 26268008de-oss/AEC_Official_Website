@@ -16,7 +16,7 @@ app.add_middleware(
 # ブラウザから「/（トップページ）」にアクセスが来たら、下の関数を実行する
 @app.get("/")
 def read_root():
-    return {"message": "サークルサイトの裏側へようこそ！だぜ！"}
+    return {"message": "サークルサイトの裏側へようこそ！"}
 
 @app.get("/about")
 def read_about():
