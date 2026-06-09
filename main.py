@@ -30,7 +30,6 @@ def read_about():
 
 @app.get("/schedule")
 def read_schedule():
-    # 🔵 企業アピール：実務っぽいJSONの配列（リスト型データ）を返すぜ
     return [
         {"date": "2026年 6月", "title": "新歓DJイベント", "description": "他大学のDJサークルと合同でクラブを貸し切って、新入生歓迎イベントを開催します！"},
         {"date": "2026年 8月", "title": "夏合宿（楽曲制作＆スピーカービルド）", "description": "山小屋にこもって2泊3日で爆音で曲を作り、スピーカーを自作する最高にテックな合宿です！"},
