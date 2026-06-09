@@ -4,7 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 # FastAPIの本体を立ち上げる
 app = FastAPI()
 
-# 🔴 CORSの設定（ここから追加）
+# CORSの設定
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], # 全ての場所からのアクセスを許可（開発中のみ）
